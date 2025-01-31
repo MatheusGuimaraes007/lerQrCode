@@ -9,7 +9,7 @@ class CreateInstance {
   async create() {
     try {
       const response = await fetch(
-        'https://evo.sinapseautomacoes.com.br/instance/create',
+        'https://evolution.sinapseautomacoes.com.br/instance/create',
         {
           method: 'POST',
           headers: {
@@ -33,7 +33,7 @@ class CreateInstance {
   async getInstance() {
     try {
       const response = await fetch(
-        `https://evo.sinapseautomacoes.com.br/instance/connect/${this.instanceName}`,
+        `https://evolution.sinapseautomacoes.com.br/instance/connect/${this.instanceName}`,
         {
           method: 'GET',
           headers: {
